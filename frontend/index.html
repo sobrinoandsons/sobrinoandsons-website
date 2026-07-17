@@ -7,6 +7,7 @@
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <nav>
@@ -18,7 +19,15 @@
           <h1>Sobrino and Son's</h1>
         </div>
 
-        <ul>
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#reseñas">Reseñas</a></li>
@@ -30,11 +39,15 @@
     <main>
       <section id="inicio">
         <div class="hero">
-          <img src="images/sobrinoandsons-logo.jpg" alt="Sobrino and Son's" />
+          <img
+            src="images/sobrinoandsons-logo.jpg"
+            alt="Logo de Sobrino and Son's"
+          />
         </div>
 
         <div class="intro">
           <h2>Bienvenidos a Sobrino and Son's</h2>
+
           <p>
             Sobrino & Son's LLC ofrece servicios completos y confiables de
             mecánica móvil las 24 horas del día, los 7 días de la semana, en
@@ -111,47 +124,56 @@
       </section>
 
       <section id="reseñas">
-        <h2>Reseñas</h2>
+        <div class="container">
+          <h2>Reseñas</h2>
 
-        <article class="review">
-          <p>"Excelente servicio y atención. Muy recomendados."</p>
-        </article>
+          <article class="review">
+            <p>"Excelente servicio y atención. Muy recomendados."</p>
+          </article>
 
-        <article class="review">
-          <p>"Trabajo rápido, honesto y de gran calidad."</p>
-        </article>
+          <article class="review">
+            <p>"Trabajo rápido, honesto y de gran calidad."</p>
+          </article>
 
-        <article class="review">
-          <p>"Sin duda volveré para el mantenimiento de mi vehículo."</p>
-        </article>
+          <article class="review">
+            <p>"Sin duda volveré para el mantenimiento de mi vehículo."</p>
+          </article>
+        </div>
       </section>
 
       <section id="contactenos">
-        <h2>Contáctenos</h2>
+        <div class="container">
+          <h2>Contáctenos</h2>
 
-        <p>Teléfono: <a href="tel:+17867636530">(786) 763-6530</a></p>
-        <p>
-          Correo:
-          <a href="mailto:sobrinoandsons@gmail.com">
-            sobrinoandsons@gmail.com
-          </a>
-        </p>
+          <p>
+            Teléfono:
+            <a href="tel:+17867636530">(786) 763-6530</a>
+          </p>
 
-        <form>
-          <input type="text" placeholder="Nombre" required />
-          <input type="email" placeholder="Correo electrónico" required />
-          <textarea
-            placeholder="Escriba su mensaje"
-            rows="5"
-            required
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+          <p>
+            Correo:
+            <a href="mailto:sobrinoandsons@gmail.com">
+              sobrinoandsons@gmail.com
+            </a>
+          </p>
+
+          <form>
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo electrónico" required />
+            <textarea
+              placeholder="Escriba su mensaje"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2026 Sobrino and Son's LLC. Todos los derechos reservados.</p>
+
       <p>
         Desarrollado por
         <a
