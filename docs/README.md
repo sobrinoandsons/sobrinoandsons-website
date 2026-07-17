@@ -56,8 +56,8 @@ ryf-website/
 - [x] Develop css.
   - [x] Implement bg images.
 - [x] Develop js.
-- [ ] Optimize for mobile screens.
-- [ ] Deploy and test.
+- [x] Optimize for mobile screens.
+- [ ] Implement Formspree for the contact form.
 - [ ] Declare project as completed.
 
 # AI Instructions

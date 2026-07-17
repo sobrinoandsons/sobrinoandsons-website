@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinksContainer = document.querySelector(".nav-links");
+
+  if (menuToggle && navLinksContainer) {
+    menuToggle.addEventListener("click", () => {
+      const isActive = navLinksContainer.classList.toggle("active");
+
+      menuToggle.setAttribute("aria-expanded", isActive);
+    });
+  }
+
   const navLinks = document.querySelectorAll("nav a");
 
   navLinks.forEach((link) => {
@@ -20,6 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
         top: targetPosition,
         behavior: "smooth",
       });
+
+      if (navLinksContainer && navLinksContainer.classList.contains("active")) {
+        navLinksContainer.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
     });
   });
 
