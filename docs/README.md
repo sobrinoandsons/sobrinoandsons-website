@@ -42,8 +42,10 @@ ryf-website/
     - bg1.png
     - bg2.png
     - bg3.png
-    - ryf-logo.png
+    - favicon.ico
+    - sbrinoandsons-logo.jpg
   - index.html
+  - main.js
   - style.css
 
 # Workflow
@@ -51,10 +53,9 @@ ryf-website/
 - [x] Introduce project to AI assitant.
 - [x] Determine structure, look, and basic features of website.
 - [x] Develop html.
-- [ ] Develop css.
-  - [ ] Implement bg images.
-- [ ] Develop js.
-- [ ] Formspree for contact form.
+- [x] Develop css.
+  - [x] Implement bg images.
+- [x] Develop js.
 - [ ] Optimize for mobile screens.
 - [ ] Deploy and test.
 - [ ] Declare project as completed.
