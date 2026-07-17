@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const isActive = navLinksContainer.classList.toggle("active");
 
       menuToggle.setAttribute("aria-expanded", isActive);
+
+      if (isActive) {
+        menuToggle.textContent = "✕";
+        menuToggle.setAttribute("aria-label", "Cerrar menú de navegación");
+      } else {
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-label", "Abrir menú de navegación");
+      }
     });
   }
 
@@ -34,7 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (navLinksContainer && navLinksContainer.classList.contains("active")) {
         navLinksContainer.classList.remove("active");
+        menuToggle.textContent = "☰";
         menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir menú de navegación");
       }
     });
   });
