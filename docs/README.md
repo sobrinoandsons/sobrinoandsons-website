@@ -42,9 +42,10 @@ ryf-website/
 
 - [x] Introduce project to AI assitant.
 - [x] Determine structure, look, and basic features of website.
-- [ ] Develop html.
+- [x] Develop html.
 - [ ] Develop css.
 - [ ] Develop js.
+- [ ] Formspree for contact form.
 - [ ] Optimize for mobile screens.
 - [ ] Deploy and test.
 - [ ] Declare project as completed.
