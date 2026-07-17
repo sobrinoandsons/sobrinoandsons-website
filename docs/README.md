@@ -21,6 +21,9 @@ sobrinoandsons-website/
   - README.md
 - frontend/
   - images/
+    - bg1.png
+    - bg2.png
+    - bg3.png
     - favicon.ico
     - sbrinoandsons-logo.jpg
   - index.html
@@ -36,7 +39,12 @@ ryf-website/
   - README.md
 - frontend/
   - images/
+    - bg1.png
+    - bg2.png
+    - bg3.png
     - ryf-logo.png
+  - index.html
+  - style.css
 
 # Workflow
 
@@ -44,6 +52,7 @@ ryf-website/
 - [x] Determine structure, look, and basic features of website.
 - [x] Develop html.
 - [ ] Develop css.
+  - [ ] Implement bg images.
 - [ ] Develop js.
 - [ ] Formspree for contact form.
 - [ ] Optimize for mobile screens.

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -23,9 +23,9 @@ img {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
-  transition: 0.3s ease;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 ul {
@@ -34,19 +34,24 @@ ul {
 
 section {
   padding: 80px 10%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
   color: #111111;
 }
 
 h2 {
   font-size: 2.5rem;
-  margin-bottom: 40px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 p {
@@ -62,8 +67,9 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   z-index: 1000;
 }
 
@@ -108,6 +114,9 @@ nav a:hover {
 
 #inicio {
   text-align: center;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    url("images/bg1.png");
 }
 
 .hero {
@@ -117,21 +126,28 @@ nav a:hover {
 }
 
 .hero img {
-  max-width: 450px;
   width: 100%;
+  max-width: 450px;
 }
 
 .intro {
   max-width: 900px;
   margin: 0 auto;
+  padding: 40px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .intro h2 {
-  margin-bottom: 30px;
+  text-align: center;
 }
 
 #servicios {
-  background-color: #f3f4f6;
+  background:
+    linear-gradient(rgba(243, 244, 246, 0.9), rgba(243, 244, 246, 0.9)),
+    url("images/bg2.png");
 }
 
 .services-grid {
@@ -141,11 +157,11 @@ nav a:hover {
 }
 
 .service-card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.94);
   padding: 35px;
   border-radius: 12px;
   border-top: 5px solid #dc2626;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: 0.3s ease;
 }
 
@@ -158,16 +174,19 @@ nav a:hover {
 }
 
 #reseñas {
-  background-color: #ffffff;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("images/bg3.png");
 }
 
 .review {
   max-width: 800px;
   margin: 0 auto 25px;
-  background: #f3f4f6;
   padding: 30px;
+  background: rgba(255, 255, 255, 0.94);
   border-left: 5px solid #dc2626;
   border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .review:last-child {
@@ -180,7 +199,9 @@ nav a:hover {
 }
 
 #contactenos {
-  background-color: #f3f4f6;
+  background:
+    linear-gradient(rgba(243, 244, 246, 0.92), rgba(243, 244, 246, 0.92)),
+    url("images/bg3.png");
 }
 
 #contactenos p {
@@ -195,17 +216,21 @@ nav a:hover {
 form {
   max-width: 700px;
   margin: 40px auto 0;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 input,
 textarea {
   width: 100%;
   padding: 15px;
-  font-size: 1rem;
   font-family: inherit;
+  font-size: 1rem;
   border: 1px solid #d1d5db;
   border-radius: 8px;
   outline: none;
@@ -224,7 +249,7 @@ button {
   padding: 15px;
   border: none;
   border-radius: 8px;
-  background-color: #dc2626;
+  background: #dc2626;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
@@ -233,11 +258,11 @@ button {
 }
 
 button:hover {
-  background-color: #b91c1c;
+  background: #b91c1c;
 }
 
 footer {
-  background-color: #111111;
+  background: #111111;
   color: #ffffff;
   text-align: center;
   padding: 40px 20px;
@@ -261,6 +286,10 @@ footer a:hover {
 }
 
 @media (max-width: 900px) {
+  section {
+    background-attachment: scroll;
+  }
+
   nav {
     flex-direction: column;
     gap: 20px;
@@ -310,11 +339,10 @@ footer a:hover {
     font-size: 1.8rem;
   }
 
-  .service-card {
-    padding: 25px;
-  }
-
+  .intro,
+  .service-card,
+  .review,
   form {
-    margin-top: 30px;
+    padding: 25px;
   }
 }
